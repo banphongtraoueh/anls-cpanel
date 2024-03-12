@@ -8,7 +8,7 @@ import {
 } from "@/sanity/queries/sanity-query";
 
 export default async function Home() {
-  const activeActivities = await getActiveActivities();
+  const activeActivities = await getActiveActivities("all");
   const posterFields = await getPosterFields();
 
   return (
